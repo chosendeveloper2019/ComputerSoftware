@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_province"
+        android:layout_width="417dp"
+        android:layout_height="213dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/phrae_img" />
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="กรุณาเลือกจังหวัด"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_province" />
+
+    <TextView
+        android:id="@+id/tv_history"
+        android:layout_width="297dp"
+        android:layout_height="319dp"
+        android:layout_marginTop="32dp"
+        android:text="ลองกด ปุ่มผ่อนะ"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header" />
+
+    <Button
+        android:id="@+id/btn_phrae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/btn_phrae"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_history" />
+
+    <Button
+        android:id="@+id/btn_chaingmai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/btn_chaingmai"
+        app:layout_constraintStart_toEndOf="@+id/btn_phrae"
+        app:layout_constraintTop_toTopOf="@+id/btn_phrae" />
+
+    <Button
+        android:id="@+id/btn_chaingrai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_chaingrai"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_chaingmai"
+        app:layout_constraintEnd_toEndOf="@+id/tv_history" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
